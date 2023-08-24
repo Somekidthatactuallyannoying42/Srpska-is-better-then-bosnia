@@ -1,0 +1,21 @@
+import random
+
+def organic_rubbish():
+    rubbish_names = ['daun', 'sayur busuk'
+                     'Cangkang telur', 'nasi basi',
+                     'ranting pohon', 'kulit buah']
+
+    return random.choice(rubbish_names)
+
+def unorganic_rubbish():
+    unorganic_names = ['besi', 'baterai',
+                       'kotak', 'kaleng',
+                       'bungkus plastik', 'kardus',
+                        'dvd']
+    
+    for i in range(5):
+        show_rubbish = []
+        rubbish = random.choice(unorganic_names)
+        show_rubbish.append(rubbish)
+
+    return random.choice(unorganic_names)
